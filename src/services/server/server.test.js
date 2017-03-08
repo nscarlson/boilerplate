@@ -1,5 +1,7 @@
 import request from 'supertest';
 
+import { APP_PORT } from 'services/constants';
+
 import app, { init } from './server';
 
 describe('server', () => {
@@ -24,13 +26,13 @@ describe('server', () => {
     });
 
     describe('init()', () => {
-        it('inits the server on port 8888', () => {
+        it(`inits the server on port ${APP_PORT}`, () => {
             jest.spyOn(app, 'listen').mockImplementation((port, cb) => cb());
             jest.spyOn(console, 'log').mockImplementation(() => {});
 
             init();
 
-            expect(app.listen).toHaveBeenCalledWith(8888, expect.anything());
+            expect(app.listen).toHaveBeenCalledWith(APP_PORT, expect.anything());
         });
     });
 });
