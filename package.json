@@ -30,6 +30,11 @@
     "url": "https://github.com/grxy/boilerplate/issues"
   },
   "homepage": "https://github.com/grxy/boilerplate#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "react": "^15.4.2",
+    "source-map-support": "^0.4.11"
+  },
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
@@ -44,7 +49,6 @@
     "enzyme": "^2.7.1",
     "eslint": "^3.17.1",
     "eslint-plugin-react": "^6.10.0",
-    "express": "^4.15.2",
     "extract-text-webpack-plugin": "^2.1.0",
     "history": "^4.6.0",
     "jest-cli": "^19.0.2",
@@ -52,7 +56,6 @@
     "less": "^2.7.2",
     "less-loader": "^3.0.0",
     "nodemon": "^1.11.0",
-    "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
@@ -63,7 +66,6 @@
     "redux-devtools-extension": "^2.13.0",
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.2.0",
-    "source-map-support": "^0.4.11",
     "style-loader": "^0.13.2",
     "supertest": "^3.0.0",
     "webpack": "^2.2.1",
