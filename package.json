@@ -1,0 +1,71 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "My boilerplate for isomorphic Node, React, and Redux apps",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress",
+    "coverage": "coveralls < coverage/lcov.info",
+    "deploy": "npm run build -- -p",
+    "lint": "eslint src",
+    "start": "nodemon private/server.js",
+    "test": "jest -c jest.json",
+    "watch": "npm run build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grxy/boilerplate.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "Node",
+    "React",
+    "Redux",
+    "isomorphic",
+    "code-splitting"
+  ],
+  "author": "https://github.com/grxy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grxy/boilerplate/issues"
+  },
+  "homepage": "https://github.com/grxy/boilerplate#readme",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^19.0.0",
+    "babel-loader": "^6.4.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.2.1",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "coveralls": "^2.12.0",
+    "css-loader": "^0.26.4",
+    "enzyme": "^2.7.1",
+    "eslint": "^3.17.1",
+    "eslint-plugin-react": "^6.10.0",
+    "express": "^4.15.2",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "history": "^4.6.0",
+    "jest-cli": "^19.0.2",
+    "keymirror": "^0.1.1",
+    "less": "^2.7.2",
+    "less-loader": "^3.0.0",
+    "nodemon": "^1.11.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router": "^3.0.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-actions": "^2.0.1",
+    "redux-devtools-extension": "^2.13.0",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "source-map-support": "^0.4.11",
+    "style-loader": "^0.13.2",
+    "supertest": "^3.0.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  }
+}
