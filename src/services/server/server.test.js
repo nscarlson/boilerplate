@@ -12,7 +12,7 @@ describe('server', () => {
             req = request(app);
         });
 
-        describe('GET /', () => {
+        describe('GET /fake', () => {
             let get;
 
             beforeEach(() => {
@@ -20,8 +20,6 @@ describe('server', () => {
             });
 
             it('has the correct status code', () => get.expect(200));
-
-            it('has the correct body', () => get.expect('SUCCESS'));
         });
     });
 
