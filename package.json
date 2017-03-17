@@ -7,7 +7,7 @@
     "build": "webpack --progress",
     "coverage": "coveralls < coverage/lcov.info",
     "deploy": "npm run build -- -p",
-    "lint": "eslint src",
+    "lint": "eslint *.js src",
     "start": "nodemon private/server.js",
     "test": "jest -c jest.json",
     "watch": "npm run build -- --watch"
