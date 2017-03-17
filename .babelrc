@@ -1,4 +1,9 @@
 {
     "compact": false,
-    "presets": ["env", "react", "stage-0"]
+    "presets": ["env", "react", "stage-0"],
+    "plugins": [
+        ["resolver", {
+            "resolveDirs": ["src"]
+        }]
+    ]
 }
