@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+DIRNAME=$(basename `pwd`)
+
+if [ "$DIRNAME" == 'boilerplate' ]; then
+    yarn jest -c jest.config.js "$@"
+else
+    yarn jest -c node_modules/boilerplate/jest.config.js "$@"
+fi
