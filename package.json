@@ -4,13 +4,7 @@
   "description": "My boilerplate for isomorphic Node and React apps",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --progress",
-    "coverage": "coveralls < coverage/lcov.info",
-    "deploy": "npm run build -- -p",
-    "lint": "eslint src",
-    "start": "nodemon private/server.js",
-    "test": "jest -c jest.json",
-    "watch": "npm run build -- --watch"
+    "boil": "./scripts/boil/boil.js"
   },
   "repository": {
     "type": "git",
@@ -18,18 +12,17 @@
   },
   "keywords": [
     "boilerplate",
-    "Node",
-    "React",
-    "Redux",
-    "isomorphic",
-    "code-splitting"
+    "node",
+    "react",
+    "redux",
+    "isomorphic"
   ],
-  "author": "https://github.com/grxy",
+  "author": "Nathan Carlson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/grxy/boilerplate/issues"
+    "url": "https://github.com/nscarlson/boilerplate/issues"
   },
-  "homepage": "https://github.com/grxy/boilerplate#readme",
+  "homepage": "https://github.com/nscarlson/boilerplate#readme",
   "dependencies": {
     "assets-webpack-plugin": "^3.5.1",
     "axios": "^0.17.1",
@@ -60,6 +53,7 @@
     "isomorphic-fetch": "^2.2.1",
     "jest": "^22.0.3",
     "jest-styled-components": "^4.11.0-1",
+    "jest-transform-graphql": "^2.1.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "postcss-loader": "^2.0.8",
