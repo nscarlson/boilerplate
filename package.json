@@ -10,19 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/grxy/boilerplate.git"
   },
-  "keywords": [
-    "boilerplate",
-    "node",
-    "react",
-    "redux",
-    "isomorphic"
-  ],
   "author": "Nathan Carlson",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nscarlson/boilerplate/issues"
+  "bin": {
+      "boil": "./scripts/boil/boil.js"
   },
-  "homepage": "https://github.com/nscarlson/boilerplate#readme",
   "dependencies": {
     "assets-webpack-plugin": "^3.5.1",
     "axios": "^0.17.1",
