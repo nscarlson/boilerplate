@@ -37,7 +37,7 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.0",
     "eslint-config-crlsn": "git+ssh://git@github.com/nscarlson/eslint-config-crlsn.git",
-    "express": "^4.16.2",
+    "express": "^4.17.1",
     "express-session": "^1.15.6",
     "extract-text-webpack-plugin": "^3.0.1",
     "file-loader": "^1.1.6",
